@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <title>atvPL1</title>
+
+  <script language="JavaScript">
+
+  function num()
+  {
+  var nome, letra, quantidade, i;
+  letra = document.frmEntrada.txtnome.value;
+  qtde = parseInt(document.frmEntrada.txtNum.value);
+
+  nome = "";
+  for(i=0; i<qtde; ++i)
+  {
+    nome += letra;
+  }
+  
+  document.write("<table border='1'><tr><td>" + nome + "</td></tr></table>");
+  }
+
+  </script>
+
+</head>
+
+<body>
+
+<form name="frmEntrada">
+Nome:<input type="text" name="txtnome"><br>
+Num:<input type="text" name="txtNum"><br>
+
+<input type="button" value="enviar" onClick="num()"><br>
+
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>atvPL1</title>
+
+  <script language="JavaScript">
+  function horizontal()
+  {
+  var nome, i;
+  nome = document.frmEntrada.txtnome.value;
+
+  document.write("<table border='1'><tr>");
+  for(i=0; i<nome.length; ++i)
+  {
+    document.write("<td>" + nome.charAt(i) + "</td>");
+  }
+  document.write("</tr></table>");
+  }
+  
+
+  function vertical()
+  {
+  var nome, i;
+  nome = document.frmEntrada.txtnome.value;
+
+  document.write("<table border='1'>");
+  for(i=0; i<nome.length; ++i)
+  {
+    document.write("<tr><td>" + nome.charAt(i) + "</td></tr>");
+  }
+  document.write("</table>");
+  }
+
+  </script>
+
+</head>
+
+<body>
+
+<form name="frmEntrada">
+Nome:<input type="text" name="txtnome"><br>
+
+<input type="button" value="horizontal" onClick="horizontal()"><br>
+<input type="button" value="vertical" onClick="vertical()"><br>
+
+</form>
+
+</body>
+
+</html>
